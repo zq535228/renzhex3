@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="X_Service.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="X_Service_org_renzhe_serv_ServiceShop" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://serv.renzhe.org/ServiceShop.asmx</Value>
+    </Setting>
+    <Setting Name="X_Service_localhost_ServiceShop" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:3630/ServiceShop.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

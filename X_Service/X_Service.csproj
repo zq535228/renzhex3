@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79EDF15C-D63C-4BC0-826E-D09074B43945}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>X_Service</RootNamespace>
+    <AssemblyName>X_Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\X_PostKing\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\测试应用\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\X_Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\X_PostKing\EXEs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\X_Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '生成|x86'">
+    <OutputPath>bin\x86\生成\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\X_PostKing\Output\X_Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '生成|AnyCPU'">
+    <OutputPath>bin\生成\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\X_Service.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\测试应用\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\X_PostKing\Lib\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\测试应用\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.HttpWatch, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\测试应用\Interop.HttpWatch.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Db\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Winista.HtmlParser">
+      <HintPath>..\测试应用\Winista.HtmlParser.dll</HintPath>
+    </Reference>
+    <Reference Include="X_Docking">
+      <HintPath>..\测试应用\X_Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="X_Quartz, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\X_PostKing\Lib\X_Quartz.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login\ModelMember.cs" />
+    <Compile Include="Login\X_Platform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\X_Platform.Designer.cs">
+      <DependentUpon>X_Platform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\MD5Helper.cs" />
+    <Compile Include="Util\SocketHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\X_Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\X_Splash.designer.cs">
+      <DependentUpon>X_Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\ISplashForm.cs" />
+    <Compile Include="Util\Splasher.cs" />
+    <Compile Include="Balloon\BalloonHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balloon\BalloonHelp.Designer.cs">
+      <DependentUpon>BalloonHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balloon\BalloonWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balloon\BalloonWindow.Designer.cs">
+      <DependentUpon>BalloonWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balloon\FMSBalloonTip.cs" />
+    <Compile Include="Balloon\FMSEditTip.cs" />
+    <Compile Include="Balloon\FMSMessageTip.cs" />
+    <Compile Include="Balloon\HitTestCodes.cs" />
+    <Compile Include="Balloon\Hooks\BaseHook.cs" />
+    <Compile Include="Balloon\Hooks\CallWndProcHook.cs" />
+    <Compile Include="Balloon\Hooks\CallWndProcRetHook.cs" />
+    <Compile Include="Balloon\Hooks\KeyBoardHook.cs" />
+    <Compile Include="Balloon\Hooks\MouseHook.cs" />
+    <Compile Include="Balloon\Hooks\WindowsHook.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BBSLog\LogUP.cs" />
+    <Compile Include="Ctrl\DefaultTriggerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ctrl\DefaultTriggerPanel.Designer.cs">
+      <DependentUpon>DefaultTriggerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ctrl\FolderBrowserDialogEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ctrl\TreeViewC.cs" />
+    <Compile Include="Db\DbAcc.cs" />
+    <Compile Include="Db\DbMysql.cs" />
+    <Compile Include="Db\DbSqlserver.cs" />
+    <Compile Include="Db\DbTools.cs" />
+    <Compile Include="Fetch\Fetch.cs" />
+    <Compile Include="Files\FilesHelper.cs" />
+    <Compile Include="Files\IdentifyEncoding.cs" />
+    <Compile Include="Files\XMLHelper.cs" />
+    <Compile Include="Files\ZipHelper.cs" />
+    <Compile Include="Login\XmlFiles.cs" />
+    <Compile Include="Login\X_Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\X_Form_Login.Designer.cs">
+      <DependentUpon>X_Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\Mail.cs" />
+    <Compile Include="NUniversalCharDet\ByteBuffer.cs" />
+    <Compile Include="NUniversalCharDet\Constants.cs" />
+    <Compile Include="NUniversalCharDet\ICharsetListener.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Big5Prober.cs" />
+    <Compile Include="NUniversalCharDet\Prober\CharsetProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\ContextAnalysis\EUCJPContextAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\ContextAnalysis\JapaneseContextAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\ContextAnalysis\SJISContextAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\DistributionAnalysis\Big5DistributionAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\DistributionAnalysis\CharDistributionAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\DistributionAnalysis\EUCJPDistributionAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\DistributionAnalysis\EUCKRDistributionAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\DistributionAnalysis\EUCTWDistributionAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\DistributionAnalysis\GB2312DistributionAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\DistributionAnalysis\JISDistributionAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\DistributionAnalysis\SJISDistributionAnalysis.cs" />
+    <Compile Include="NUniversalCharDet\Prober\EscCharsetProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\EUCJPProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\EUCKRProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\EUCTWProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\GB18030Prober.cs" />
+    <Compile Include="NUniversalCharDet\Prober\HebrewProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Latin1Prober.cs" />
+    <Compile Include="NUniversalCharDet\Prober\MBCSGroupProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\SBCSGroupProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\BulgarianModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\CyrillicModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\GreekModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\HebrewModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Ibm855Model.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Ibm866Model.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Koi8rModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Latin5BulgarianModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Latin5Model .cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Latin7Model.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\MacCyrillicModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\SequenceModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Win1251BulgarianModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Win1251Model.cs" />
+    <Compile Include="NUniversalCharDet\Prober\Sequence\Win1253Model.cs" />
+    <Compile Include="NUniversalCharDet\Prober\SingleByteCharsetProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\SJISProber.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\Big5SMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\CodingStateMachine.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\EUCJPSMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\EUCKRSMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\EUCTWSMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\GB18030SMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\HZSMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\ISO2022CNSMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\ISO2022JPSMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\ISO2022KRSMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\PkgInt.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\SJISSMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\SMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\UCS2BESMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\StateMachine\UTF8SMModel.cs" />
+    <Compile Include="NUniversalCharDet\Prober\UTF8Prober.cs" />
+    <Compile Include="NUniversalCharDet\UniversalDetector.cs" />
+    <Compile Include="Other\X_ListView.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflect\ReflectionFunction.cs" />
+    <Compile Include="Util\ArrayHelper.cs" />
+    <Compile Include="Util\HardWare.cs" />
+    <Compile Include="Util\INIHelper.cs" />
+    <Compile Include="Util\LogHelper.cs" />
+    <Compile Include="Util\ProcessHelper.cs" />
+    <Compile Include="Util\RegexHelper.cs" />
+    <Compile Include="Util\SeoHelper.cs" />
+    <Compile Include="Util\StringHelper.cs" />
+    <Compile Include="Util\ThreadHelper.cs" />
+    <Compile Include="Util\TimeHelper.cs" />
+    <Compile Include="Util\EchoHelper.cs" />
+    <Compile Include="Login\Login_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login_Base.Designer.cs">
+      <DependentUpon>Login_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\X_Waiting.cs" />
+    <Compile Include="Util\X_Lable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Util\X_Lable.designer.cs">
+      <DependentUpon>X_Lable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\localhost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\org.renzhe.serv\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WebBrowserHelper.cs" />
+    <Compile Include="Web\WebServiceHelper.cs" />
+    <Compile Include="Web\xkCookies.cs" />
+    <Compile Include="Web\xkHttp.cs" />
+    <Compile Include="Web\xkSocket.cs" />
+    <EmbeddedResource Include="Login\X_Platform.resx">
+      <DependentUpon>X_Platform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\X_Splash.resx">
+      <DependentUpon>X_Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balloon\BalloonHelp.resx">
+      <DependentUpon>BalloonHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balloon\BalloonWindow.resx">
+      <DependentUpon>BalloonWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balloon\Hooks\WindowsHook.resx">
+      <DependentUpon>WindowsHook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ctrl\DefaultTriggerPanel.resx">
+      <DependentUpon>DefaultTriggerPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\X_Form_Login.resx">
+      <DependentUpon>X_Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Login\Login_Base.resx">
+      <DependentUpon>Login_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\X_Lable.resx">
+      <DependentUpon>X_Lable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="NUniversalCharDet\Prober\.svn\all-wcprops" />
+    <None Include="NUniversalCharDet\Prober\.svn\entries" />
+    <None Include="NUniversalCharDet\Prober\.svn\format" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\Big5Prober.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\CharsetProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\EscCharsetProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\EUCJPProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\EUCKRProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\EUCTWProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\GB18030Prober.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\HebrewProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\Latin1Prober.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\MBCSGroupProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\SBCSGroupProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\SingleByteCharsetProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\SJISProber.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\.svn\text-base\UTF8Prober.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\all-wcprops" />
+    <None Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\entries" />
+    <None Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\format" />
+    <None Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\text-base\EUCJPContextAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\text-base\JapaneseContextAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\text-base\SJISContextAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\all-wcprops" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\entries" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\format" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\text-base\Big5DistributionAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\text-base\CharDistributionAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\text-base\EUCJPDistributionAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\text-base\EUCKRDistributionAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\text-base\EUCTWDistributionAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\text-base\GB2312DistributionAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\text-base\JISDistributionAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\text-base\SJISDistributionAnalysis.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\all-wcprops" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\entries" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\format" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\BulgarianModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\CyrillicModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\GreekModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\HebrewModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Ibm855Model.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Ibm866Model.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Koi8rModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Latin5BulgarianModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Latin5Model .cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Latin7Model.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\MacCyrillicModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\SequenceModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Win1251BulgarianModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Win1251Model.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\Sequence\.svn\text-base\Win1253Model.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\all-wcprops" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\entries" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\format" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\Big5SMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\CodingStateMachine.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\EUCJPSMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\EUCKRSMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\EUCTWSMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\GB18030SMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\HZSMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\ISO2022CNSMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\ISO2022JPSMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\ISO2022KRSMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\PkgInt.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\SJISSMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\SMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\UCS2BESMModel.cs.svn-base" />
+    <None Include="NUniversalCharDet\Prober\StateMachine\.svn\text-base\UTF8SMModel.cs.svn-base" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\localhost\ModelShopOne.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\ServiceShop.wsdl" />
+    <None Include="Web References\org.renzhe.serv\ModelShopOne.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\org.renzhe.serv\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\org.renzhe.serv\ServiceShop.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Db\MySql.Data.dll" />
+    <None Include="Resources\add.png" />
+    <Content Include="升级日志.txt" />
+    <Content Include="授权文件.txt" />
+    <None Include="Web References\localhost\ServiceShop.disco" />
+    <None Include="Web References\org.renzhe.serv\ServiceShop.disco" />
+    <None Include="Resources\X_Form_Login.png" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\z.png" />
+    <None Include="Resources\wordpress_cloud.png" />
+    <None Include="Resources\myico.ico" />
+    <None Include="Resources\online_writing.ico" />
+    <None Include="Resources\DAEMON Tools Lite.ico" />
+    <None Include="Resources\dede.ico" />
+    <None Include="Resources\cmd.ico" />
+    <None Include="Resources\cmd1.ico" />
+    <None Include="Resources\cmd2.ico" />
+    <None Include="Resources\cmd3.ico" />
+    <None Include="Resources\dede1.ico" />
+    <None Include="Resources\dede2.ico" />
+    <None Include="Resources\bbs.ico" />
+    <None Include="Resources\bbs1.ico" />
+    <None Include="Resources\bbs2.ico" />
+    <None Include="Resources\notebook_edit.ico" />
+    <None Include="Resources\go_up.ico" />
+    <None Include="Resources\forward.ico" />
+    <None Include="Resources\forward1.ico" />
+    <None Include="Resources\question.png" />
+    <Content Include="Resources\wordpress .ico" />
+    <None Include="Resources\wordpress 1.ico" />
+    <None Include="Resources\myico1.ico" />
+    <None Include="Resources\wordpress 2.ico" />
+    <None Include="Resources\wordpress.ico" />
+    <None Include="Resources\wordpress 3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HttpWatch\" />
+    <Folder Include="NUniversalCharDet\Prober\.svn\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\.svn\props\" />
+    <Folder Include="NUniversalCharDet\Prober\.svn\tmp\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\.svn\tmp\props\" />
+    <Folder Include="NUniversalCharDet\Prober\.svn\tmp\text-base\" />
+    <Folder Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\props\" />
+    <Folder Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\tmp\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\tmp\props\" />
+    <Folder Include="NUniversalCharDet\Prober\ContextAnalysis\.svn\tmp\text-base\" />
+    <Folder Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\props\" />
+    <Folder Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\tmp\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\tmp\props\" />
+    <Folder Include="NUniversalCharDet\Prober\DistributionAnalysis\.svn\tmp\text-base\" />
+    <Folder Include="NUniversalCharDet\Prober\Sequence\.svn\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\Sequence\.svn\props\" />
+    <Folder Include="NUniversalCharDet\Prober\Sequence\.svn\tmp\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\Sequence\.svn\tmp\props\" />
+    <Folder Include="NUniversalCharDet\Prober\Sequence\.svn\tmp\text-base\" />
+    <Folder Include="NUniversalCharDet\Prober\StateMachine\.svn\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\StateMachine\.svn\props\" />
+    <Folder Include="NUniversalCharDet\Prober\StateMachine\.svn\tmp\prop-base\" />
+    <Folder Include="NUniversalCharDet\Prober\StateMachine\.svn\tmp\props\" />
+    <Folder Include="NUniversalCharDet\Prober\StateMachine\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:3630/ServiceShop.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://localhost:3630/ServiceShop.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>X_Service_localhost_ServiceShop</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://serv.renzhe.org/ServiceShop.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\org.renzhe.serv\</RelPath>
+      <UpdateFromURL>http://serv.renzhe.org/ServiceShop.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>X_Service_org_renzhe_serv_ServiceShop</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\X_Plugin\X_Plugin.csproj">
+      <Project>{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}</Project>
+      <Name>X_Plugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,139 @@
+﻿发布正文上面，若没有链接，可以清楚掉。
+http://findicons.com/icon/133410/helmet?id=436051
+
+更新日志：
+http://findicons.com/pack/2213/absque
+http://findicons.com/pack/2341/toolbar_icon_set_2
+http://findicons.com/pack/2306/tranquiliti
+http://findicons.com/pack/2304/a0x_set5
+http://findicons.com/pack/2428/woocons
+http://findicons.com/pack/2103/discovery/2
+
+2011年12月12日，间隔时间写在站点模块内
+
+
+2011年3月9日17:57:11
+自动识别文件编码。支持txt html等扩展名文件。
+
+2011年3月8日23:58:07
+
+            #region 编码识别
+            if (chkUnknownEncoding.Checked)
+            {
+                IdentifyEncoding ie = new IdentifyEncoding();
+                FileInfo fi = new FileInfo(PathFile);
+                string encodingName = string.Empty;
+
+                encodingName = ie.GetEncodingName(fi);
+                fi = null;
+
+                if (encodingName.ToLower() == "other")
+                {
+                    txtResult.Text += string.Format("\r\n{0}文件格式不正确或已损坏。 ", PathFile);
+                    return;
+                }
+                else
+                {
+                    oriEncode = Encoding.GetEncoding(encodingName);
+                }
+            }
+            else
+                oriEncode=GetSelectEncoding(cmbSourceEncode.SelectedIndex);
+            #endregion
+
+
+让文件读取自动识别编码，支持html扩展名。
+
+2011年3月5日19:29:17
+分类信息，没有继承登录的cookies。测试分类信息
+
+2011年3月3日18:05:23
+验证失败，保留HTML到临时文件中。。
+
+
+2011年3月2日14:01:59
+研究软件测试。
+WP挂机任务编写。
+
+2011年3月1日19:55:53
+新建任务。
+
+2011年2月28日23:01:32
+采集模块的主关键词  加粗 加大。
+采集替换符号 不能是=
+采集2个空行变成一个空行，程序内部实现
+
+
+2011年2月28日14:03:21
+开启是否启用计划任务，对于不想挂机的用户，就按照正常执行。
+发布任务自动触发采集已完成。
+检查结束日期不可用的bug 完成。
+对于cmd窗口不是每次都清空。完成。
+文章发布前处理。
+？是否使用nhibernate，进行数据库持久化。。。
+伪原创
+整理获取站点可发布的总分类集合site.PostID，不会用于随机顶贴。
+
+登录提示：登录成功，登录失败
+
+2011年2月27日22:41:41
+完成了任务功能。
+
+2011年2月27日8:58:11
+增加采集模块说明
+采集内容最小长度，对于内容不足的，不进行采集。
+
+2011年2月25日14:39:32
+目前的采集模块框架已经差不多了。细节需要完善。
+开始学习Quartz组件的使用。直接引用了Quartz的dll。编写采集任务。
+把exe输出目录变更为output
+
+希望天使解决的问题：
+1.退出的时候，CMD窗口，有时候还存在。
+
+
+2011年2月24日18:39:56
+制作采集功能。
+研究任务队列开源组件X_Quartz
+具体的使用方法：http://www.cnblogs.com/shanyou/archive/2007/09/04/881935.html
+
+
+2011年2月22日22:39:53
+完成了内置浏览器辅助功能。
+完成了扩展中的网站外链挖掘。
+
+2011年2月21日21:15:07
+准备做一个动画演示。
+
+2011年2月16日0:06:13，多线程,没有严格测试,细节还需要完善
+增加应用程序图标
+发布是否socket，增加成功URL
+测试分类信息群发
+不适用数据库连接,适用本地文件系统.随机顶贴.
+
+2011年2月20日
+更新了发布模块中的随机分类获取问题.发帖没有被替换的问题.优化了部分cmd窗口的提示信息.组别字数最少2个.
+预计最近几天讲发布新版本.
+
+
+希望解决的问题：
+异常抓取不到。
+优化socket跟post的方法，提前声明，统一使用。参数一致化处理。
+内置浏览器功能更丰富一些。
+多余的控件删除。。
+
+
+优化Model类的字段
+重构方法.
+优化站点的启动任务，所有任务。。
+更改提示ballon的图片
+
+标题显示 个人信息，软件的版本等。
+排列顺序。
+
+软件图标来源：
+http://code.svnspot.com/pinfo.php?pid=15067
+
+
+
+

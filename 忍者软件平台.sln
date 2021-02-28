@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X_Service", "X_Service\X_Service.csproj", "{79EDF15C-D63C-4BC0-826E-D09074B43945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X_Update", "X_Update\X_Update.csproj", "{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X_Plugin", "X_Plugin\X_Plugin.csproj", "{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEDE网站助手", "DEDE网站助手\DEDE网站助手.csproj", "{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+		生成|Any CPU = 生成|Any CPU
+		生成|x86 = 生成|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.Debug|x86.ActiveCfg = Debug|x86
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.Debug|x86.Build.0 = Debug|x86
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.Release|x86.ActiveCfg = Release|x86
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.Release|x86.Build.0 = Release|x86
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.生成|Any CPU.ActiveCfg = 生成|Any CPU
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.生成|Any CPU.Build.0 = 生成|Any CPU
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.生成|x86.ActiveCfg = 生成|x86
+		{79EDF15C-D63C-4BC0-826E-D09074B43945}.生成|x86.Build.0 = 生成|x86
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.Release|x86.ActiveCfg = Release|Any CPU
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.生成|Any CPU.ActiveCfg = 生成|Any CPU
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.生成|Any CPU.Build.0 = 生成|Any CPU
+		{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}.生成|x86.ActiveCfg = 生成|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.Release|x86.ActiveCfg = Release|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.生成|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.生成|Any CPU.Build.0 = Release|Any CPU
+		{1A6A8361-8652-46E0-A44A-4E04DBA34E3F}.生成|x86.ActiveCfg = Release|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.Release|x86.ActiveCfg = Release|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.生成|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.生成|Any CPU.Build.0 = Release|Any CPU
+		{A5B41CB5-1DC7-4880-9C40-AA41F10FBF56}.生成|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

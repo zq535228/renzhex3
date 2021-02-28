@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://serv.renzhe.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://serv.renzhe.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://serv.renzhe.org/">
+      <s:element name="GetAllPutModules">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllPutModulesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllPutModulesResult" type="tns:ArrayOfModelShopOne" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfModelShopOne">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ModelShopOne" nillable="true" type="tns:ModelShopOne" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ModelShopOne">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ModelName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelAuthor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelQQ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelPassWord" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SiteModelDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FilePath" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsPub" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastUpDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FileSize" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCoreSocket" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsCoreWeb" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsFanZhuaQu" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllPickModules">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllPickModulesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllPickModulesResult" type="tns:ArrayOfModelShopOne" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadClassStr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileClassStr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mtype" type="tns:mType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="mType">
+        <s:restriction base="s:string">
+          <s:enumeration value="发布模块" />
+          <s:enumeration value="抓取模块" />
+          <s:enumeration value="个人数据" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UploadClassStrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadClassStrResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClassStr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mtype" type="tns:mType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClassStrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClassStrResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="classMemberObj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mtype" type="tns:mType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="classMemberObj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileNewName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mtype" type="tns:mType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ReNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="doit">
+        <s:complexType />
+      </s:element>
+      <s:element name="doitResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllPutModulesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllPutModules" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPutModulesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllPutModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPickModulesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllPickModules" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPickModulesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllPickModulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadClassStrSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadClassStr" />
+  </wsdl:message>
+  <wsdl:message name="UploadClassStrSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadClassStrResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClassStrSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClassStr" />
+  </wsdl:message>
+  <wsdl:message name="GetClassStrSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClassStrResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReNameSoapIn">
+    <wsdl:part name="parameters" element="tns:ReName" />
+  </wsdl:message>
+  <wsdl:message name="ReNameSoapOut">
+    <wsdl:part name="parameters" element="tns:ReNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="doitSoapIn">
+    <wsdl:part name="parameters" element="tns:doit" />
+  </wsdl:message>
+  <wsdl:message name="doitSoapOut">
+    <wsdl:part name="parameters" element="tns:doitResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceShopSoap">
+    <wsdl:operation name="GetAllPutModules">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取服务器上所有的发布模块。</wsdl:documentation>
+      <wsdl:input message="tns:GetAllPutModulesSoapIn" />
+      <wsdl:output message="tns:GetAllPutModulesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPickModules">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取服务器上所有的发布模块。</wsdl:documentation>
+      <wsdl:input message="tns:GetAllPickModulesSoapIn" />
+      <wsdl:output message="tns:GetAllPickModulesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadClassStr">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">web提供的方法，上传文件到相应的地址</wsdl:documentation>
+      <wsdl:input message="tns:UploadClassStrSoapIn" />
+      <wsdl:output message="tns:UploadClassStrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassStr">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取某个模块</wsdl:documentation>
+      <wsdl:input message="tns:GetClassStrSoapIn" />
+      <wsdl:output message="tns:GetClassStrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">删除某一个模块，只有Qin具有这个权力。</wsdl:documentation>
+      <wsdl:input message="tns:DeleteSoapIn" />
+      <wsdl:output message="tns:DeleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">修改某一个模块的名称，只有Qin具有这个权力。</wsdl:documentation>
+      <wsdl:input message="tns:ReNameSoapIn" />
+      <wsdl:output message="tns:ReNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="doit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">心跳方法</wsdl:documentation>
+      <wsdl:input message="tns:doitSoapIn" />
+      <wsdl:output message="tns:doitSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceShopSoap" type="tns:ServiceShopSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllPutModules">
+      <soap:operation soapAction="http://serv.renzhe.org/GetAllPutModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPickModules">
+      <soap:operation soapAction="http://serv.renzhe.org/GetAllPickModules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadClassStr">
+      <soap:operation soapAction="http://serv.renzhe.org/UploadClassStr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassStr">
+      <soap:operation soapAction="http://serv.renzhe.org/GetClassStr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://serv.renzhe.org/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReName">
+      <soap:operation soapAction="http://serv.renzhe.org/ReName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doit">
+      <soap:operation soapAction="http://serv.renzhe.org/doit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceShopSoap12" type="tns:ServiceShopSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllPutModules">
+      <soap12:operation soapAction="http://serv.renzhe.org/GetAllPutModules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPickModules">
+      <soap12:operation soapAction="http://serv.renzhe.org/GetAllPickModules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadClassStr">
+      <soap12:operation soapAction="http://serv.renzhe.org/UploadClassStr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassStr">
+      <soap12:operation soapAction="http://serv.renzhe.org/GetClassStr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap12:operation soapAction="http://serv.renzhe.org/Delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReName">
+      <soap12:operation soapAction="http://serv.renzhe.org/ReName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doit">
+      <soap12:operation soapAction="http://serv.renzhe.org/doit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceShop">
+    <wsdl:port name="ServiceShopSoap" binding="tns:ServiceShopSoap">
+      <soap:address location="http://serv.renzhe.org/ServiceShop.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceShopSoap12" binding="tns:ServiceShopSoap12">
+      <soap12:address location="http://serv.renzhe.org/ServiceShop.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
